@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    font-family: "arial";
+    font-family: "roboto";
 }
 
 header{
@@ -11,6 +11,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0px 0px 10px gray;
+    border-bottom: 1px solid gray;
 }
 
 .logo{
@@ -19,6 +21,11 @@ header{
     line-height: 0px;
     margin: 20px 0px 0px 100px;
     color: black;
+    font-family: 'Oswald';
+}
+
+.brac{
+    font-weight: 100;
 }
 
 .logo h3 span{
@@ -26,8 +33,9 @@ header{
 }
 
 .logo small{
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
     border-bottom: 1px solid #742B15;
+    font-weight: 100;
 }
 
 .logo:hover{
@@ -39,17 +47,20 @@ main{
     margin: 140px auto 0px auto;
     padding: 16px 16px;
     text-align: center;
-    background-color: #B4E1E5;
+    background-color: rgb(219, 229, 230);
+    box-shadow: 0px 0px 10px gray;
 }
 
 main h4{
     padding: 8px 8px;
     border-bottom: 1px solid grey;
+    font-family: 'Oswald';
 }
 
 section{
     margin-top: 16px;
 }
+
 section div p{
     text-align: left;
 }
@@ -62,6 +73,7 @@ section div p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
+    box-shadow: 0px 0px 10px gray;    
 }
 
 .links a{
@@ -69,4 +81,17 @@ section div p{
     padding: 1rem;
     margin: 1rem 0rem;
     color: #742B15;
+}
+
+@media (max-width:576px) {
+    h4, h5{ font-size:80%; 
+       }
+
+    div, section{
+        font-size:90%;        
+    }
+
+    .links-wrap{
+        grid-template-columns: 1fr;
+    }
 }
