@@ -118,8 +118,28 @@ nav{
 #banner{
     margin-top: 100px;   
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr;
+    overflow: hidden;
+    animation: banner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes banner{
+    0%{
+        grid-template-columns: 1fr 0fr 0fr; 
+    }
+    33.33%{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+    66.66%{
+        grid-template-columns: 0fr 0fr 1fr;
+    }
+    100%{
+        grid-template-columns: 1fr 0fr 0fr; 
+    }
+}
 .banners{
     max-width: 100%;
     height: auto;    

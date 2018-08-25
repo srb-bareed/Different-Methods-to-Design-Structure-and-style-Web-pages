@@ -42,7 +42,7 @@
     <main>
         
 
-        <section id="grid">
+        <section>
             <h2><span>What Is CSS Grid?</span></h2>
             <p>
                     CSS grid layout or CSS grid is a technique in CSS that allows web developers to create complex responsive web design layouts more
@@ -61,35 +61,35 @@
         <section id="browsersupport">
                 <h2><span>Browser Support</span></h2>
                 <article id="browser-support">
-                <p>
-                        As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
-                        prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
-                        all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
-                         targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
-                        webpage as needed.<br>
-                    
-                                As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
-                                prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
-                                all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
-                                 targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
-                                webpage as needed.
+                    <p>
+                            As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
+                            prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
+                            all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
+                            targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
+                            webpage as needed.<br>
                         
-                </p>
+                            As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
+                            prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
+                            all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
+                            targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
+                            webpage as needed.
+                            
+                    </p>
 
-                <div>
-                    <h4>caniuse.com</h4>
-                    <ul>
-                        <li>Ie-11 - Partial support</li>
-                        <li>edge - <span class="fa fa-check-circle text-info"></span></li>
-                        <li>firefox - <span class="fa fa-check-circle text-info"></span></li>
-                        <li>chrome - <span class="fa fa-check-circle text-info"></span></li>
-                        <li>safari - <span class="fa fa-check-circle text-info"></span></li>
-                        <li>opera - <span class="fa fa-check-circle text-info"></span></li>
-                        <li>opera mini - partial</li>
-                        <li>uc browser - <span class="fa fa-check-circle text-info"></span></li>
-                    </ul>
-                </div>
-                 </article>
+                    <div>
+                        <h4>caniuse.com</h4>
+                        <ul>
+                            <li>Ie-11 - Partial support</li>
+                            <li>edge - <span class="fa fa-check-circle text-info"></span></li>
+                            <li>firefox - <span class="fa fa-check-circle text-info"></span></li>
+                            <li>chrome - <span class="fa fa-check-circle text-info"></span></li>
+                            <li>safari - <span class="fa fa-check-circle text-info"></span></li>
+                            <li>opera - <span class="fa fa-check-circle text-info"></span></li>
+                            <li>opera mini - partial</li>
+                            <li>uc browser - <span class="fa fa-check-circle text-info"></span></li>
+                        </ul>
+                    </div>
+                </article>
             </section>
 
 
@@ -105,25 +105,29 @@
                     </div>
             </section>
 
+
             <section id="complexdesign">
                 <h2><span>Complex-Designs</span></h2>
                 <div id="complex-design">
-                <div id="header"><h3>Grid Application</h3></div>
-                <div id="nav">
-                    <a href="">Profile</a>
-                    <a href="">features</a>
-                    <a href="">Services</a>
-                    <a href="">Login</a>                    
-                </div>
+                    <div id="header"><h3>Grid Application</h3></div>
+                    
+                    <!--navigation div for complex-design section starts-->
+                    <div id="nav">
+                        <a href="">Profile</a>
+                        <a href="">features</a>
+                        <a href="">Services</a>
+                        <a href="">Login</a>                    
+                    </div>
+                    <!--navigation div for complex-design section ends-->
+                    
+                    <!--content divs of complex-design section starts-->
+                    <div id="div1"></div>
+                    <div id="div2"></div>
+                    <div id="div3"></div>
+                    <div id="div4"></div>
+                    <!--content divs of complex-design section ends-->
 
-                
-
-                <div id="div1"></div>
-                <div id="div2"></div>
-                <div id="div3"></div>
-                <div id="div4"></div>
-
-                <footer id="bottom"></footer>
+                    <footer id="bottom"></footer>
                 </div>
             </section>
 
@@ -156,20 +160,6 @@
  });
 
 
- var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("banners");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
     </script>
 </body>
 </html>
