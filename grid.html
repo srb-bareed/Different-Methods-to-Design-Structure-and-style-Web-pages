@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="css/bootstrap-4.1.0-dist/js/bootstrap.js"></script>   
+    <link rel="stylesheet" href="css/bootstrap-4.1.0-dist/css/bootstrap.css">    
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Web-page designed with Grid</title>
+
+
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo"><h3><span>DESIGN</span> CODE</h3><small>CODING DESIGN</small></a>
+
+        <a href="javascript:void(0);" class="icon" id="navtoggler">
+                <i class="fa fa-bars"></i>
+        </a>  
+        <nav id="navbarmenu">
+            <ul>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#browsersupport">Support</a></li>
+                <li><a href="#ecomgallery">Gallery</a></li>
+                <li><a href="#complexdesign">Complex-Design</a></li>
+                <li><a href="#loginformwrapper">Login</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <div id="banner">
+            <img src="images/banner1.png" class="banners">
+            <img src="images/banner2.png" class="banners">
+            <img src="images/banner3.png" class="banners">
+    </div>
+
+    <main>
+        
+
+        <section id="grid">
+            <h2><span>What Is CSS Grid?</span></h2>
+            <p>
+                    CSS grid layout or CSS grid is a technique in CSS that allows web developers to create complex responsive web design layouts more
+                    easily and consistently across browsers.[1] There have been other webpage layout methods used previously including tables, the 
+                   box model, and CSS flex box. It is currently a W3C Candidate Recommendation despite already being adopted by most major browsers.
+                   
+                   CSS grid can create more asymmetrical layouts than the previous grid and layout options like CSS floats. It also allows for more 
+                   standardized code that works across browsers. This is in contrast to relying on specific browser hacks or complicated workarounds.
+                   One issue with using floats in CSS is if content gets added to one portion of the page it could disrupt the flow of the page and break 
+                   the layout. This is due to the varying heights for layout elements. Though CSS flex box supports flexible layouts and provides the 
+                   flexibility of creating complex layouts, it fails when the need for creating responsive layouts in 2-dimensional space arises. That is 
+                   where CSS grid layout shines. (source: wikipedia)
+            </p>
+        </section>
+
+        <section id="browsersupport">
+                <h2><span>Browser Support</span></h2>
+                <article id="browser-support">
+                <p>
+                        As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
+                        prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
+                        all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
+                         targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
+                        webpage as needed.<br>
+                    
+                                As of October 2017, Chrome, Firefox, Safari, and Edge all support CSS grid without vendor 
+                                prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
+                                all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
+                                 targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
+                                webpage as needed.
+                        
+                </p>
+
+                <div>
+                    <h4>caniuse.com</h4>
+                    <ul>
+                        <li>Ie-11 - Partial support</li>
+                        <li>edge - <span class="fa fa-check-circle text-info"></span></li>
+                        <li>firefox - <span class="fa fa-check-circle text-info"></span></li>
+                        <li>chrome - <span class="fa fa-check-circle text-info"></span></li>
+                        <li>safari - <span class="fa fa-check-circle text-info"></span></li>
+                        <li>opera - <span class="fa fa-check-circle text-info"></span></li>
+                        <li>opera mini - partial</li>
+                        <li>uc browser - <span class="fa fa-check-circle text-info"></span></li>
+                    </ul>
+                </div>
+                 </article>
+            </section>
+
+
+            <section id="ecomgallery">
+                    <h2><span>E-commerce Product gallery with CSS Grid</span></h2>
+                    <div id="gallery">
+                        <div class="gallery-items"></div>
+                        <div class="gallery-items"></div>
+                        <div class="gallery-items"></div>
+                        <div class="gallery-items"></div>
+                        <div class="gallery-items"></div>
+                        <div class="gallery-items"></div>
+                    </div>
+            </section>
+
+            <section id="complexdesign">
+                <h2><span>Complex-Designs</span></h2>
+                <div id="complex-design">
+                <div id="header"><h3>Grid Application</h3></div>
+                <div id="nav">
+                    <a href="">Profile</a>
+                    <a href="">features</a>
+                    <a href="">Services</a>
+                    <a href="">Login</a>                    
+                </div>
+
+                
+
+                <div id="div1"></div>
+                <div id="div2"></div>
+                <div id="div3"></div>
+                <div id="div4"></div>
+
+                <footer id="bottom"></footer>
+                </div>
+            </section>
+
+
+            <section id="loginformwrapper">
+                <h2><span>Login</span></h2>                
+                    <form id="loginform">
+                    <label for="username">Username: <input type="email" name="username" id="username"></label>
+                    <label for="psword">Password: <input type="password" name="psword" id="psword"></label>
+                    <input type="submit" value="login" id="login">
+                </form>               
+            </section>
+    </main>
+
+
+    <script src="js\jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function(){
+     $("#navtoggler").click(function(){       
+         $("#navbarmenu").toggle(".webmenu");
+     });
+
+     $(window).resize(function() {
+        var screen_width = $(document).width();
+     if(screen_width > 896){
+        $("#navbarmenu").removeClass('webmenu');
+        $("#navbarmenu").css('display', 'block');
+     }
+     }); 
+ });
+
+
+ var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("banners");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>
