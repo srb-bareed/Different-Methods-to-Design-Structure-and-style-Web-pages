@@ -1,0 +1,313 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto slab";
+}
+
+header{
+    background-color: #00AAC8;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px gray;
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+    display: inline-block;
+    height: 80px;
+    line-height: 0px;
+    margin: 20px 0px 0px 100px;
+    color: black;
+    font-family: 'Oswald';
+}
+
+.logo h3 span{
+    border-top: 1px solid #742B15;
+}
+
+.logo small{
+    letter-spacing: 0.4rem;
+    border-bottom: 1px solid #742B15;
+    font-weight: 100;
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;    
+    margin-right: 1rem;
+    padding: 0rem 0.4rem 0rem 0.4rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    color: rgb(27, 27, 27);
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+}
+
+nav ul li:hover{    
+    background-color: rgb(27, 27, 27);
+}
+
+nav ul li:hover a{
+    color: white;
+}
+
+nav{
+    justify-self: end;
+    align-self: flex-end;
+}
+
+#navtoggler{
+    justify-self: end;
+    align-self: center;    
+    margin-right: 2.5rem;
+    display: none;
+}
+
+.logo{
+    justify-self: start;
+    
+}
+
+
+
+@media screen and (max-width: 895px){
+    #navbarmenu{
+        justify-self: end;
+        background-color: #00AAC8;
+        width: 100%;
+        text-align: center;
+        grid-column: 1 / 3;
+        display: none;
+    }
+
+    #navtoggler{
+        display: block;
+    }
+
+    #navbarmenu ul li{
+        display: block;
+        padding: 1rem;
+    }  
+    
+    .webmenu{
+        display: block;
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+
+#banner{
+    margin-top: 100px;   
+    margin-bottom: 20px;
+}
+
+.banners{
+    max-width: 100%;
+    height: auto;    
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main section h2{
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+main section h2 span{
+    border-bottom: 4px solid rgb(39, 39, 39);
+}
+
+#browser-support{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr; 
+}
+
+#browser-support div{
+    justify-self: end;
+    border: 1px solid grey;
+}
+
+main section{
+    margin-top: 40px;
+}
+
+#gallery{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+.gallery-items{
+    width: 170px;
+    height: 250px;
+    background-color: grey;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+#browser-support div ul{
+    list-style: none;
+}
+
+#browser-support div h4{
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+#complex-design #header, #complex-design #bottom{
+    width: 100%;
+    height: 40px;
+    background-color: #1B87C8;
+}
+
+#complex-design #nav{
+    background-color: #38A4DC;
+    text-align: center;
+}
+
+#complex-design #div1, #complex-design #div2, #complex-design #div3{
+    background-color: #F1F1F2;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+#complex-design #div4{
+    background-color: #38A4DC;
+    padding: 0.4rem;
+    margin: 0.4rem
+}
+
+#complex-design #bottom{
+    background-color: #1B87C8;
+}
+
+#complex-design{
+    width: 100%;
+    height: 640px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr auto auto 0.1fr;
+    grid-template-areas: "header header header header"
+    "nav div1 div2 div3"
+    "nav div4 div4 div3"
+    "bottom bottom bottom bottom"
+}
+
+#complex-design #header{
+grid-area: header;
+}
+
+#complex-design #nav{
+    grid-area: nav;
+}
+
+#complex-design #div1{
+    grid-area: div1;
+}
+
+#complex-design #div2{
+    grid-area: div2;
+}
+
+
+#complex-design #div3{
+    grid-area: div3;
+}
+
+#complex-design #div4{
+    grid-area: div4;
+}
+
+#complex-design #bottom{
+    grid-area: bottom;
+}
+
+#complex-design #nav ul{
+    list-style: none;
+}
+
+#complex-design #nav a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+    color: white;
+}
+
+#complex-design #nav a:hover{
+    color: black;
+    background-color: rgb(219, 219, 219);
+}
+
+#header h3{
+    margin-left: 3.5rem;
+}
+
+#complex-design{
+    background-color: #B4E3FA;
+}
+
+@media screen and (max-width: 576px){    
+    #complex-design{
+        grid-template-columns: 0.4fr 1fr 1fr;
+        grid-template-rows: 0.1fr auto auto 0.1fr;
+        grid-template-areas: "header header header"
+        "nav div1 div2"
+        "nav div4 div4"
+        "bottom bottom bottom"
+    }
+
+    #div3{
+        display: none;
+    }
+}
+
+
+#loginform{
+    
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+#login{  
+    font-family: "Oswald";
+    background-color: orange;
+}
+
+#loginformwrapper{
+    width: 40%;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
