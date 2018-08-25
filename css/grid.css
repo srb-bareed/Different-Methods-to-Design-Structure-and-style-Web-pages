@@ -214,17 +214,20 @@ section h2{
     text-align: center;
 }
 
-#complex-design #div1, #complex-design #div2, #complex-design #div3{
+#complex-design #div1, #complex-design #div2{
     background-color: #F1F1F2;
     padding: 0.4rem;
     margin: 0.4rem;
 }
 
-#complex-design #div4{
+#complex-design #div4, #complex-design .toggler{
     background-color: #38A4DC;
     padding: 0.4rem;
     margin: 0.4rem
 }
+
+
+
 
 #complex-design #bottom{
     background-color: #1B87C8;
@@ -237,8 +240,8 @@ section h2{
     grid-template-columns: 0.8fr 1fr 1fr 0.1fr;
     grid-template-rows: 0.1fr auto auto 0.1fr;
     grid-template-areas: "header header header header"
-    "nav div1 div2 div3"
-    "nav div4 div4 div3"
+    "nav div1 div2 toggler"
+    "nav div4 div4 toggler"
     "bottom bottom bottom bottom"
 }
 
@@ -259,8 +262,8 @@ grid-area: header;
 }
 
 
-#complex-design #div3{
-    grid-area: div3;
+#complex-design .toggler{
+    grid-area: toggler;
 }
 
 #complex-design #div4{
@@ -298,17 +301,60 @@ grid-area: header;
 
 @media screen and (max-width: 576px){    
     #complex-design{
-        grid-template-columns: 0.4fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 0.1fr;
         grid-template-rows: 0.1fr auto auto 0.1fr;
         grid-template-areas: "header header header"
-        "nav div1 div2"
-        "nav div4 div4"
+        "div1 div2 nav"
+        "div4 div4 nav"
         "bottom bottom bottom"
     }
 
-    #div3{
+    #nav{
+        grid-column: 1 / span 4;
+    }
+
+    #nav{
         display: none;
     }
+
+    h2{
+        font-size: 110%;
+    }
+
+    section, article, p, li, a{
+        font-size: 95%;
+    }
+    #browser-support div{
+        margin-left: -20px;
+        justify-self: center;
+        
+    }
+
+    #browser-support div{
+        justify-self: center;
+        
+    }
+
+    #browser-support{
+        grid-template-columns: 1fr; 
+    }
+
+    .complexmenu{
+        display: block;
+    }
+
+    #complex-design .toggler{
+        align-self: flex-start;
+        text-align: center;
+        color: white;
+        transform: rotate(90deg);
+    }
+
+    #header h3{
+        font-size: 100%;
+        font-weight: bold;
+    }
+    
 }
 
 
@@ -330,4 +376,9 @@ grid-area: header;
     margin: auto;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
 }

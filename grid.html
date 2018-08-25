@@ -72,7 +72,7 @@
                             prefixes.[4][5][6] IE 10 and 11 support CSS grid but with an outdated specification. On mobile, 
                             all modern browsers support CSS grid except for Opera mini and UC browser. Web developers
                             targeting older browsers can utilize Modernizr 3.5.0 to detect and gracefully degrade the 
-                            webpage as needed.
+                            webpage as needed.(source: wikipedia)
                             
                     </p>
 
@@ -109,7 +109,7 @@
             <section id="complexdesign">
                 <h2><span>Complex-Designs</span></h2>
                 <div id="complex-design">
-                    <div id="header"><h3>Grid Application</h3></div>
+                    <div id="header"><h3>Grid Application</h3><span class="toggler">|||</span></div>
                     
                     <!--navigation div for complex-design section starts-->
                     <div id="nav">
@@ -123,7 +123,6 @@
                     <!--content divs of complex-design section starts-->
                     <div id="div1"></div>
                     <div id="div2"></div>
-                    <div id="div3"></div>
                     <div id="div4"></div>
                     <!--content divs of complex-design section ends-->
 
@@ -160,6 +159,11 @@
  });
 
 
+ $(document).ready(function(){
+     $(".toggler").click(function(){       
+         $("#nav").toggle(".complexmenu");
+     });
+ });
     </script>
 </body>
 </html>
